@@ -16,11 +16,8 @@ interface Jugador extends RowDataPacket {
 
 app.get('/', (req: Request, res: Response) => {
     res.send(`
-        <body style="font-family: sans-serif; text-align: center; background: #f0fdf4; padding: 50px;">
-            <h1 style="color: #166534;">Ojeo de Futbolistas</h1>
-            <p>Bienvenido al sistema de gestión de plantillas.</p>
-            <a href="/api/datos" style="color: #15803d; font-weight: bold;">Ver todos los jugadores</a>
-        </body>
+        <h1>API de jugadores de futbol</h1>
+        <a href="/api/datos">Ver todos los jugadores</a>
     `);
 });
 
@@ -46,4 +43,5 @@ app.get('/api/datos', async (req: Request, res: Response) => {
 
 app.listen(port, () => {
     console.log(` El partido ha comenzado en http://localhost:${port}`);
+
 });
