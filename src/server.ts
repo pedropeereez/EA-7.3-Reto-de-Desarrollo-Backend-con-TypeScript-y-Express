@@ -42,6 +42,7 @@ app.get('/api/datos', async (req: Request, res: Response) => {
 });
 
 app.listen(port, () => {
-    console.log(` El partido ha comenzado en http://localhost:${port}`);
+    console.log(` Visualizar en http://localhost:${port}`);
 
 });
+
